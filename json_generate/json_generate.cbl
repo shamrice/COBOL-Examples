@@ -1,6 +1,6 @@
       ******************************************************************
       * author: Erik Eriksen
-      * date: 2022-04-11
+      * date: 2022-04-12
       * purpose: Example of using the XML GENERATE command to create
       *          JSON documents from records.
       *
