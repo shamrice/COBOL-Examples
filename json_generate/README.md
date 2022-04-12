@@ -4,7 +4,7 @@ compiler.
 
 Note: You may have to ```sudo ldconfig``` after making and installing the libjson-c library for the GnuCOBOL build script to pick it up.
 
-GnuCOBOL compile configuration with the JSON library is done using the following flag:
+Configuring GnuCOBOL compilation with the JSON library is done by adding the following flag:
 ```./configure --with-json```
 
 If successful, ```cobcrun --info``` should display:
