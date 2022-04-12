@@ -11,11 +11,13 @@ If successful, ```cobcrun --info``` should display:
 
 **Example output of program:**
 ```
-Generating xml for record: Test Name Test Valuetrue 
+XML document successfully generated.
+Generated xml for record: Test Name Test Value          true 
 ----------------------------
 <?xml version="1.0"?>
 <ws-record enabled="true"><name>Test Name</name><value>Test Value</value></ws-record>
 ----------------------------
+XML output character count: 0107
 Done.
 ```
 
