@@ -4,7 +4,7 @@
       * purpose: Example of using the XML GENERATE command to create
       *          XML documents from records.
       *
-      * Preqreq: xmllib2 installed on system compiling source.
+      * Preqreq: libxml2 installed on system compiling source.
       *
       * To enable, GnuCOBOL must be configured and built with the xml
       * library added. When configurating souce, use:
