@@ -6,7 +6,8 @@ Note: You may have to ```sudo ldconfig``` after making and installing the libjso
 
 Configuring GnuCOBOL compilation with the JSON library is done by adding the following flag:
 ```./configure --with-json```
-After configured, you will need to also run ```make``` ```make install```
+
+After configured, you will need to also run ```make``` ```make install``` to rebuid and reinstall GnuCOBOL with the new library.
 
 If successful, ```cobcrun --info``` should display:
 ```JSON library             : json-c, version 0.15.99```
