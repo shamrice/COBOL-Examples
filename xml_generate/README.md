@@ -1,4 +1,4 @@
-To run this example, you need to have libxml2 installed on your system 
+To run this example, you need to have [libxml2](https://github.com/GNOME/libxml2) installed on your system 
 and enabled during the configuration process of builing the GnuCOBOL 
 compiler. 
 
