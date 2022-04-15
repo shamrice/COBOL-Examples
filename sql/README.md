@@ -27,7 +27,9 @@ can connect and query a PostgreSQL database.
 
 
 
+
 **Notes regarding querying with variable-length variables:**
+
 I haven't seen this mentioned in other documents, so I figure it might be helpful to put this information here regarding 
 the use of variable length variables in a WHERE clause either using the equals sign or the LIKE operator. 
 
