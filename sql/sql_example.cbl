@@ -10,8 +10,8 @@
       *>
       *> Prerequisites: Postgres SQL database with create_db script ran
       *>                on.
-      *>               esqlOC Precompiler
-      *>               unixODBC odbc-postgresql driver installed
+      *>                esqlOC Precompiler
+      *>                unixODBC odbc-postgresql driver installed
       *>
       *> Precomiler: esqlOC -static -o generated_sql_ex.cbl sql_example.cbl
       *> Tectonics: cobc -x -static -locsql generated_sql_ex.cbl
@@ -24,7 +24,7 @@
 
        WORKING-STORAGE SECTION.
 
-      *> Variables insdie the DECLARE SECTION can be used in 
+      *> Variables inside the DECLARE SECTION can be used in 
       *> SQL queries either as input or output. Variables outside of 
       *> this section are local to the program only.
        EXEC SQL
@@ -71,7 +71,7 @@
        END-EXEC.
 
       *> Local variables to the program only. These are not seen by 
-      *> the precompiler operations.
+      *> the precompiler operation.
        01  ws-num-accounts                  pic 999 comp.
 
        01  ws-account-record                occurs 0 to 100 times
