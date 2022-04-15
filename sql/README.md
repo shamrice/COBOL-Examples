@@ -11,11 +11,6 @@ can connect and query a PostgreSQL database.
 * ```sql_example.cbl``` - The example program that gets sent to the precompiler.
 
 
-**How to build**
-* Run the ```create_test_db.sql``` on your testing PostgreSQL instance. 
-* Precompile the ```sql_example.cbl``` source file using: ```esqlOC -static -o generated_sql_ex.cbl sql_example.cbl```
-* Compile the generated source file with the GnuCOBOL compiler: ```cobc -x -static -locsql generated_sql_ex.cbl```
-* This will create the test program executable ```generated_sql_ex``` 
 
 
 **Prerequisites:**
@@ -25,6 +20,15 @@ can connect and query a PostgreSQL database.
 * PostgreSQL Database - https://www.postgresql.org/
 * odbc-postgresql - Postgres ODBC driver
 
+
+
+
+
+**How to build**
+* Run the ```create_test_db.sql``` on your testing PostgreSQL instance. 
+* Precompile the ```sql_example.cbl``` source file using: ```esqlOC -static -o generated_sql_ex.cbl sql_example.cbl```
+* Compile the generated source file with the GnuCOBOL compiler: ```cobc -x -static -locsql generated_sql_ex.cbl```
+* This will create the test program executable ```generated_sql_ex``` 
 
 
 
