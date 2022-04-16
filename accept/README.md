@@ -23,8 +23,36 @@ as asterisks. Note that the input will still be in plain text in memory so displ
 of the variable that was entered securely will display the original text that was inputted. 
 
 **Example of program output:**
+
 ```
 Enter password: ********
    You entered: password
 ```
+
+
+
+**Accept**
+
+
+```accept.cbl``` demonstrates a couple of examples of the different accept syntax. Please 
+refer to the comments in the source code for explainations of each example.
+
+
+**Example of program output:**
+
+```
+Simple accept. Enter a value: test
+You entered: test            
+Press any key to enter screen mode.
+
+Enter a value or wait 3 seconds:
+You entered:
+Enter 16 chars to auto skip: 1234567890123456
+You entered: 1234567890123456
+Enter a value (no echo): 
+You entered: test
+Enter a value: TEST
+You entered: TEST
+```
+
 
