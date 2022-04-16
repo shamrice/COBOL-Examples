@@ -16,7 +16,7 @@ Those functionalities are covered in their related sub directories in this repo.
 
 
 
-##Accept
+## Accept
 
 
 ```accept.cbl``` demonstrates a couple of examples of the different accept syntax options. Please
@@ -42,7 +42,7 @@ You entered: TEST
 
 
 
-##Accept Secure
+## Accept Secure
 
 ```accept-secure.cbl``` demonstrates using the "secure" parameter on an except statement to hide 
 the text input from being displayed on the screen. In the default case, the input will be displayed 
