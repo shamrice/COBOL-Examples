@@ -8,7 +8,7 @@ written as:
 
 Please note that by adding any parameters to the basic structure above will move the application 
 into "COBOL screen mode" if it isn't already. This screen mode uses either the pdcurses (Win) or 
-ncurses (Mac/Linux) to display the program output instead of STDOUT. When this mode is entered, 
+ncurses (Mac/Linux) library to display the program output instead of STDOUT. When this mode is entered, 
 screen x,y locations must be provided to screen output or it will all be defaulted to the 
 upper left hand corner of the terminal output. This can be done by either passing the screen 
 location in the output statements or using the screen-section to define the screen's output. 
