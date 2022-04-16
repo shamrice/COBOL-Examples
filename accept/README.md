@@ -16,6 +16,7 @@ Those functionalities are covered in their related sub directories in this repo.
 
 
 **Accept Secure**
+
 ```accept-secure.cbl``` demonstrates using the "secure" parameter on an except statement to hide 
 the text input from being displayed on the screen. In the default case, the input will be displayed 
 as asterisks. Note that the input will still be in plain text in memory so displaying the contents 
