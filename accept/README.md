@@ -94,7 +94,7 @@ Enter value: value
 accept from console: value                    
 Press enter to enter screen mode.
 
-accept from lines: 000000070
+accept from lines: 000000020
 accept from columns: 000000080
 Using CBL_GET_SCR_SIZE instead:
 Num lines:    20 
