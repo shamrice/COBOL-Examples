@@ -5,15 +5,18 @@
       *
       *          For this example program, I have every accept being stored
       *          in a generic x(25) variable. These can be broken down as
-      *          needed in a case by case basis.
-      *           Ex from date could instead use:
-      *              accept ws-current-date from date
+      *          needed on a case by case basis.
       *
-      *            Variable declaration:
-      *                01  ws-current-date.
-      *                    05  ws-current year      pic 99.
-      *                    05  ws-current-month     pic 99.
-      *                    05  ws-current-day       pic 99.
+      *          Ex FROM DATE could instead use:
+      *
+      *            accept ws-current-date from date
+      *
+      *          Variable declaration:
+      *
+      *            01  ws-current-date.
+      *                05  ws-current year      pic 99.
+      *                05  ws-current-month     pic 99.
+      *                05  ws-current-day       pic 99.
       *
       *
       * tectonics: cobc
@@ -94,7 +97,7 @@
 
 
       *> FROM DATE returns current date in YYMMDD format. Note that this
-      *> is can cause calculation issues on year if you're not careful
+      *> can cause calculation issues on year if you're not careful
       *> as there no century included in the year value.
            accept ws-input from date
            display "accept from date: " ws-input
@@ -130,11 +133,6 @@
            accept ws-input from user name
            display "accept from user name: " ws-input
 
-      *> FROM EXCEPTION STATUS returns the latest exception status value.
-      *> Note: it will be zeros in the case of this program.
-           accept ws-input from exception status
-           display "accept from exception status: " ws-input
-
       *> FROM CONSOLE is the default if not specified. Reads user input
       *> from the console.
            display "Enter value: " with no advancing
@@ -165,8 +163,6 @@
            display "Num lines: " at 0501 ws-input at 0514
            move ws-num-cols to ws-input
            display "Num cols: " at 0601 ws-input at 0614
-
-
 
            goback.
        end program accept-from-example.
