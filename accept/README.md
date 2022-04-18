@@ -72,7 +72,7 @@ ACCEPT... FROM... Example Program
 ---------------------------------
 Pass command line parameters to demo that feature
  
-accept from command-line: this is one cmd arg in qu
+accept from command-line: this is one cmd arg these are individual 
 accept from argument-number: 000000004                
 accept from argument-value: this is one cmd arg
 accept from argument-value: these                    

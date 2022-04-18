@@ -4,7 +4,7 @@
       * purpose: Examples of using various forms of the ACCEPT...FROM...
       *
       *          For this example program, I have every accept being stored
-      *          in a generic x(25) variable. These can be broken down as
+      *          in a generic x(50) variable. These can be broken down as
       *          needed on a case by case basis.
       *
       *          Ex FROM DATE could instead use:
@@ -27,7 +27,7 @@
        file section.
        working-storage section.
 
-       01  ws-input                     pic x(25).
+       01  ws-input                     pic x(50).
 
        01  ws-num-lines                 usage binary-char. *>pic x comp-x also works
        01  ws-num-cols                  usage binary-char.
