@@ -64,7 +64,7 @@ Enter password: ********
 in an ```ACCEPT``` statement. Please see the source code for an explaination of each example.
 
 
-**Example of program output:**
+**Example of program output:** Called using: ```./accept_from "this is one cmd arg" these are individual```
 
 ```
  
@@ -74,7 +74,7 @@ Pass command line parameters to demo that feature
  
 accept from command-line: this is one cmd arg in qu
 accept from argument-number: 000000004                
-accept from argument-value: this is one cmd arg in qu
+accept from argument-value: this is one cmd arg
 accept from argument-value: these                    
 accept from argument-value: are                      
 accept from argument-value: individual               
