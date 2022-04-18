@@ -58,4 +58,49 @@ Enter password: ********
 
 
 
+## Accept From 
+
+```accept_from.cbl``` demonstrates a bunch of different examples when using the ```FROM``` keyword 
+in an ```ACCEPT``` statement. Please see the source code for an explaination of each example.
+
+
+**Example of program output:**
+
+```
+ 
+ACCEPT... FROM... Example Program
+---------------------------------
+Pass command line parameters to demo that feature
+ 
+accept from command-line: this is one cmd arg in qu
+accept from argument-number: 000000004                
+accept from argument-value: this is one cmd arg in qu
+accept from argument-value: these                    
+accept from argument-value: are                      
+accept from argument-value: individual               
+Before environment setting set:
+accept from environment:                          
+accept from exception status: 000001537                
+After environment setting set:
+accept from environment: NOW SET!                 
+accept from date: 220418                   
+accept from date yyyymmdd: 20220418                 
+accept from day: 22108                    
+accept from day yyyyddd: 2022108                  
+accept from time: 15462522                 
+accept from day-of-week: 1                        
+accept from user name: erik                     
+Enter value: value
+accept from console: value                    
+Press enter to enter screen mode.
+
+accept from lines: 000000070
+accept from columns: 000000080
+Using CBL_GET_SCR_SIZE instead:
+Num lines:    20 
+Num cols:     80
+
+```
+
+
 
