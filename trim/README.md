@@ -6,10 +6,16 @@ passing ```leading``` or ```trailing``` as a parameter.
 
 
 Examples:
+
 ```function trim(ws-variable)```
+
 ```function trim(ws-variable leading)```
+
 ```function trim(ws-variable trailing)```
+
 ```function trim("  string literal  ")```
+
+
 
 
 If you do not want to have to type ```function``` every time use an intrinsic function, you can add ```function all instrinsic``` 
@@ -21,9 +27,10 @@ Example:
        
        configuration section.
        repository.
-           function all intrinsic.
-       
+           function all intrinsic.      
 ```
+
+
 
 
 ```trim.cbl``` demonstrates a couple of examples of using the ```trim``` function.
