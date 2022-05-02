@@ -1,6 +1,7 @@
       ******************************************************************
       * author: Erik Eriksen
       * date: 2022-04-18
+      * updated: 2022-05-02
       * purpose: Examples of using various forms of the ACCEPT...FROM...
       *
       *          For this example program, I have every accept being stored
@@ -29,8 +30,11 @@
 
        01  ws-input                     pic x(50).
 
-       01  ws-num-lines                 usage binary-char. *>pic x comp-x also works
-       01  ws-num-cols                  usage binary-char.
+       01  ws-num-lines                 usage binary-char unsigned. *>pic x comp-x also works
+       01  ws-num-cols                  usage binary-char unsigned.
+
+       01  ws-num-lines-disp            pic 9(3).
+       01  ws-num-cols-disp             pic 9(3).
 
        01  ws-max-args                  pic 9(3) comp.
        01  ws-idx                       pic 9(3) comp.
@@ -154,15 +158,15 @@
            display "accept from columns: " at 0301 ws-input at 0322
 
       *> Example of using the CBL_GET_SCR_SIZE" system call to do the
-      *> same as above. Note: For some reason, values cannot exceed
-      *> two digits for columns or rows. Higher values will be truncated.
-      *> whereas ACCEPT..FROM does not.
+      *> same as above. Note: return values must be converted to numeric
+      *> in order to be displayed. Alphanumeric seems to truncate the
+      *> value to two digits regardless of variable length.
            display "Using CBL_GET_SCR_SIZE instead: " at 0401
            call "CBL_GET_SCR_SIZE" using ws-num-lines ws-num-cols
-           move ws-num-lines to ws-input
-           display "Num lines: " at 0501 ws-input at 0514
-           move ws-num-cols to ws-input
-           display "Num cols: " at 0601 ws-input at 0614
+           move ws-num-lines to ws-num-lines-disp
+           display "Num lines: " at 0501 ws-num-lines-disp at 0514
+           move ws-num-cols to ws-num-cols-disp
+           display "Num cols: " at 0601 ws-num-cols-disp at 0614
 
            goback.
        end program accept-from-example.
