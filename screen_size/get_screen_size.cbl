@@ -23,8 +23,8 @@
        01  ws-scr-lines         usage binary-char unsigned.
        01  ws-scr-cols          usage binary-char unsigned.
 
-       01  ws-scr-lines-disp    pic 999.
-       01  ws-scr-cols-disp     pic 999.
+       01  ws-scr-lines-disp    pic zz9.
+       01  ws-scr-cols-disp     pic zz9.
 
 
        procedure division.
@@ -38,20 +38,14 @@
            display space blank screen
 
       *> Example of using ACCEPT .. FROM.. to get the lines and column
-      *> size of the current display. Note that the line and column
-      *> sizes returned must be converted to display data before they
-      *> can be viewed.
-
+      *> size of the current display.
            display "Using 'ACCEPT ... FROM LINES' and 'ACCEPT ... FROM "
                & "COLUMNS' to get screen size:" at 0101
 
            perform 3 times
 
-               accept ws-scr-lines from lines
-               accept ws-scr-cols from cols
-
-               move ws-scr-lines to ws-scr-lines-disp
-               move ws-scr-cols to ws-scr-cols-disp
+               accept ws-scr-lines-disp from lines
+               accept ws-scr-cols-disp from cols
 
                perform display-screens-size
 
@@ -59,7 +53,9 @@
 
       *> Same example as above but using the CBL_GET_SCR_SIZE call. This
       *> works the same but gets both values in one call instead of
-      *> two separate ones.
+      *> two separate ones. Note that the line and column
+      *> sizes returned must be converted to display data before they
+      *> can be viewed.
            display space blank screen
            display "Using 'CBL_GET_SCR_SIZE' to get screen size:"
 
