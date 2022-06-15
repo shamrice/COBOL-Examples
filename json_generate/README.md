@@ -1,3 +1,6 @@
+# JSON GENERATE Example
+
+
 To run this example, you need to have [libjson-c](https://github.com/json-c/json-c) installed on your system
 and enabled during the configuration process of builing the GnuCOBOL 
 compiler. 
