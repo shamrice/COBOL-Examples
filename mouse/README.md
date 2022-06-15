@@ -1,3 +1,5 @@
+# Mouse Example
+
 
 This is a very simple example drawing program created to demonstrate the mouse functionality and how to use it.
 
